@@ -39,6 +39,7 @@ DATABASES = {<br/>
 <br/>
 
 3-Run commands:<br/>
+- $ source env/bin/activate
 - $ python3 manage.py makemigrations
 - $ python3 manage.py migrate
 - $ pytohn3 manage.py runserver
