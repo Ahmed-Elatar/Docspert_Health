@@ -1,4 +1,4 @@
-#!/home/ahmed-elatar/Docspert_Health_Assessment/env/bin/python3
+#!/home/ahmed-elatar/Docspert_Health/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
