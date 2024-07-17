@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block user %}  
+    
+{% endblock %}
+
+
+{% block content %}
+  <h1>Login</h1>
+  <div style="border-style: double;background-color: darkgrey;margin-left: 450px;padding: 20px;padding-bottom: 180px;padding-right: 50px; width: 300px;">
+    <form  method="post" >
+      {{ form.as_p }}
+      {% csrf_token %}
+      <br>
+      <p><input type="submit" value="Login"></p>
+      
+      <a style="float: left; margin-left: 5px;" href="{% url 'signup' %} ">Dont have Account ?. Create</a>  
+        
+    </form>
+</div>
+
+    
+ 
+  
+  
+{% endblock %}

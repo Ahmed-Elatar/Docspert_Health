@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+
+{% block user %}
+
+{% endblock %}
+
+
+{% block content %}
+  <h1>Recent Transfers</h1>
+    
+
+    <h2 style="color:brown;">Details </h2>
+    <br>
+
+    <table style="width:1000px ;border: 1px solid rgb(0, 0, 0);">
+      <tr >
+        
+        <th style="background-color: #96D4D4;border: 1px solid black;">From</th>
+        <th style="background-color: #96D4D4;border: 1px solid black;">Amount</th>
+        <th style="background-color: #96D4D4;border: 1px solid black;">To</th>
+        <th style="background-color: #96D4D4;border: 1px solid black;">Time</th>
+        
+      </tr>
+       
+      {% for t in transfers %}
+  
+      <tr>
+        
+        <td style="background-color: #96D4D4;border: 1px solid black;">  {{t.accounts_from}}</td>
+        <td style="background-color: #96D4D4;border: 1px solid black;">{{t.amount}}</td>
+        <td style="background-color: #96D4D4;border: 1px solid black;">  {{t.accounts_to}}</td>
+        <th style="background-color: #96D4D4;border: 1px solid black;">{{t.trans_time}}</th>
+  
+      
+        
+      </tr>
+
+
+      {% endfor%}
+       <h2></h2>
+      
+    </table>
+
+  
+
+    <div style="margin-left: 650px;">
+        {% include "pagination.html" with page=transfers %}
+      </div>  
+  
+  
+{% endblock %}

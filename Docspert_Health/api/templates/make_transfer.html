@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block user %}  
+    
+
+
+
+{% endblock %}
+
+
+
+{% block content %}
+
+{% if message == "not-enough" %}
+    <script>
+        alert("not enough balance to make transfer");        
+    </script>
+
+{% endif %}
+
+{% if message == "login-first" %}
+    <script>
+        alert("You Should To Login For making transfers");        
+    </script>
+
+{% endif %}
+
+
+<h1>Make Transfer</h1>
+  <h2 style="margin-left: 450px;">Transfer Details</h2>
+  <div style="border-style: double;background-color: darkgrey;margin-left: 450px;padding: 20px;padding-bottom: 80px;padding-right: 50px; width: 300px;">
+      <form  method="post" >
+        {{ form.as_p }}
+        {% csrf_token %}
+        <br>
+        <p><input type="submit" value="Transfer"></p>
+        
+          
+      </form>
+  </div>
+  
+  <style>
+    input{
+      
+      color: green;
+    }
+  </style>
+  
+{% endblock %}

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+
+{% block user %}
+
+{% endblock %}
+
+
+{% block content %}
+  <h1>Search Result</h1>
+    
+
+    <h2 style="color:brown;">Details </h2>
+    <br>
+
+    <table style="width:1000px ;border: 1px solid rgb(0, 0, 0);">
+      <tr >
+        <th style="background-color: #96D4D4;border: 1px solid black;">Name</th>
+        <th style="background-color: #96D4D4;border: 1px solid black;">Balance</th>
+       
+        
+      </tr>
+      {% for account in accounts %}
+      <tr>
+        <td style="background-color: #96D4D4;border: 1px solid black;">  {{account.name}}</td>
+        <td style="background-color: #96D4D4;border: 1px solid black;">{{account.balance}}</td>
+  
+      
+        
+      </tr>
+
+
+      {% endfor%}
+       
+      
+    </table>
+
+  
+
+    <div style="margin-left: 650px;">
+        {% include "pagination.html" with page=accounts %}
+      </div>  
+  
+  
+{% endblock %}
