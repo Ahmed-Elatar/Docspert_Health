@@ -61,7 +61,7 @@ URL Map:
  - path('list-transfers/',To get all recent Transfers),
  
 
-
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-49.png)
 ![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-16-02.png)
 ![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-16-58.png)
 ![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-17-09.png)
@@ -69,7 +69,6 @@ URL Map:
 ![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-17-35.png)
 ![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-24.png)
 ![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-31.png)
-![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-49.png)
 
 
 
