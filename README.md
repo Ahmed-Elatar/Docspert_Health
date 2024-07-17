@@ -3,13 +3,12 @@
 
 It's a small web app using Django that handles fund transfers between two accounts 
 And Retrieve the recent Transfers, and List all accounts with their funds  
+also you can search for a certain account from search bar at home page
 
 
-
-
+<br><br>
 
 Docspert-Health - Project Setup Guide <br/>
-
 Pre-requisites<br/>
 
 Before you begin, ensure you have met the following requirements:
