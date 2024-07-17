@@ -44,6 +44,12 @@ DATABASES = {<br/>
 - $ pytohn3 manage.py runserver
 - Your project should now be running at http://127.0.0.1:8000/
 
+4-Also you can run this command for testing:<br/>
+- $ python3 manage.py test
+
+- now the project ready ..
+
+
 URL Map:
  - path('', index ,For Home Page),
  - path('login/',For Login),
