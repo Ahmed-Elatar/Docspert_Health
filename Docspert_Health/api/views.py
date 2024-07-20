@@ -9,7 +9,7 @@ from .models import *
 from .serializers import *
 from django.core.paginator import Paginator,EmptyPage,PageNotAnInteger
 from django.contrib.auth.decorators import login_required
-
+from .task import *
 
 
 
@@ -48,19 +48,9 @@ def add_csv_file(request):
             csv_file = form.cleaned_data.get('file')
             decoded_file = csv_file.read().decode('utf-8').splitlines()
             reader = csv.DictReader(decoded_file)
+            data = list(reader)
+            my_task.delay(data)
             
-            for row in reader:
-                record=Account.objects.filter(id=row['ID']).first()
-                if record == None:
-                    Account.objects.create(id=row['ID'] , name = row['Name'] , balance = row['Balance']  )
-                else:
-                    record.balance= row['Balance']
-                    record.save()
-
-                print(row['Name'])
-            
-
-
             return redirect('index')
 
 
