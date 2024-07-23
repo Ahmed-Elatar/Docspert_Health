@@ -5,28 +5,29 @@ FROM python:3.10-slim
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Set work directory
-WORKDIR /api
+# Set the working directory
+WORKDIR /app
 
-# Install dependencies
-COPY requirements.txt /api/
+# Copy the requirements file
+COPY . .
 
-# Install PostgreSQL development libraries and build tools
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    libpq-dev \
+
+
+RUN apt-get update \
+    && apt-get install -y \
+        gcc \
+        libpq-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Upgrade pip and install Python dependencies
+# Install dependencies
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Copy project files
-COPY . .
+# Copy the Django project
+COPY Docspert_Health /app
 
-# Expose the port the app runs on
+# Expose the port
 EXPOSE 8000
 
-# Command to run the application
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
-
+# Run the application
+CMD ["bash", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]

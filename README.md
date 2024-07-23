@@ -39,6 +39,7 @@ DATABASES = {<br/>
 <br/>
 
 3-Run commands:<br/>
+- $ source env/bin/activate
 - $ python3 manage.py makemigrations
 - $ python3 manage.py migrate
 - $ pytohn3 manage.py runserver
@@ -61,7 +62,14 @@ URL Map:
  - path('list-transfers/',To get all recent Transfers),
  
 
-
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-49.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-16-02.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-16-58.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-17-09.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-17-22.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-17-35.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-24.png)
+![alt text](https://github.com/Ahmed-Elatar/Docspert_Health/blob/main/Docspert_Health/sceen_shots/Screenshot%20from%202024-07-17%2020-18-31.png)
 
 
 

@@ -20,3 +20,11 @@ def my_task( reader):
 
     return "Task DONE"
 
+@shared_task
+def my_interval_task():
+
+    for i in range(91):
+        print (i)
+        sleep(0.05)
+
+       

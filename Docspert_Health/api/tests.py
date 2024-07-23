@@ -4,7 +4,7 @@ from django.urls import reverse
 from django.contrib.auth.models import User
 from .models import Account, CsvFiles, Transfer
 
-class YourAppTests(TestCase):
+class UnitTest(TestCase):
 
     def setUp(self):
         # Create a user for authentication
